@@ -10,12 +10,12 @@
     <div class="container">
         @foreach ($travels as $travel)
             <div class="card">
-                <h1>{{$travel['destinazione']}}</h1>
-                <h2>{{$travel['passeggeri']}}</h2>
-                <h2>{{$travel['partenza']}}</h2>
-                <h4>{{$travel['ritorno']}}</>
-                <h4>{{$travel['descrizione']}}</h4>
-                <h4>{{$travel['prezzo']}}</h4>
+                <h1>Destinazione: {{$travel['destinazione']}}</h1>
+                <h2>Passeggeri: {{$travel['passeggeri']}}</h2>
+                <h2>Partenza: {{$travel['partenza']}}</h2>
+                <h4>Ritorno: {{$travel['ritorno']}}</>
+                <h4>Descrizione viaggio: {{$travel['descrizione']}}</h4>
+                <h4>Prezzo: {{$travel['prezzo']}}</h4>
             </div>
         @endforeach
     </ul>
